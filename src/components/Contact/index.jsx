@@ -23,15 +23,15 @@ export default function index() {
                             <Image 
                             fill={true}
                             alt={"image"}
-                            src={`/images/background.jpg`}
+                            src={`/images/pic2.png`}
                             />
                         </div>
-                        <h2>Let's work</h2>
+                        <h2>Strategic Decisions</h2>
                     </span>
-                    <h2>together</h2>
+                    <h2>with Data</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>
                         <Rounded  backgroundColor={"#334BD3"} className={styles.button}>
-                            <p>Get in touch</p>
+                            <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>Get in Toutch</p></a> 
                         </Rounded>
                     </motion.div>
                     <motion.svg style={{rotate, scale: 2}} width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,39 +40,40 @@ export default function index() {
                 </div>
                 <div className={styles.nav}>
                         <Rounded>
-                            <p>info@dennissnellenberg.com</p>
+                           <a href="mailto:contato@dyeghocunha.com?subject=Contact%20from%20Website&body=Hello%2C%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><p>contato@dyeghocunha.com</p></a>
                         </Rounded>
                         <Rounded>
-                            <p>+31 6 27 84 74 30</p>
+                           <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>+55 47 9275-6286</p></a> 
                         </Rounded>
                 </div>
                 <div className={styles.info}>
                     <div>
                         <span>
                             <h3>Version</h3>
-                            <p>2022 © Edition</p>
+                            <p>2025 © Edition</p>
                         </span>
                         <span>
                             <h3>Version</h3>
-                            <p>11:49 PM GMT+2</p>
+                            <p>12:48 PM GMT-3</p>
                         </span>
                     </div>
                     <div>
                         <span>
                             <h3>socials</h3>
                             <Magnetic>
-                                <p>Awwwards</p>
+                                <a href="https://www.linkedin.com/in/dyeghocunha" target="_blank"><p>LinkedIn</p></a>
                             </Magnetic>
-                        </span>
+                        </span>  
                         <Magnetic>
-                            <p>Instagram</p>
+                          <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>WhatsApp</p></a>
                         </Magnetic>
-                        <Magnetic>
-                            <p>Dribbble</p>
+                          <Magnetic>
+                            <a href="https://github.com/DyeghoCunha" target="_blank"><p>GitHub</p></a>
                         </Magnetic>
-                        <Magnetic>
-                            <p>Linkedin</p>
-                        </Magnetic>
+                        {/* <Magnetic> */}
+                             {/* <a href="https://www.instagram.com/dyeghocunha/" target="_blank"><p>Instagram</p></a> */}
+                        {/* </Magnetic> */}
+                      
                     </div>
                 </div>
             </div>
