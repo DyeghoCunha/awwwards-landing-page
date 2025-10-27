@@ -22,7 +22,7 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        background-color: white;
+        // background-color: white;
         pointer-events: none;
         overflow: hidden;
         z-index: 3;
@@ -41,10 +41,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 20px;
     }
     
     .modal img{
         height: auto;
+        border-radius: 20px;
+        filter: blur(2px)
     }
     
     .cursor, .cursorLabel{

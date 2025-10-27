@@ -9,24 +9,40 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "C2 Montreal",
-    src: "c2montreal.png",
+    title: "Predictive Tax Optimization",
+    src: "1.png",
     color: "#000000"
   },
   {
-    title: "Office Studio",
-    src: "officestudio.png",
+    title: "Automated Tax Audit",
+    src: "4.png",
     color: "#8C8C8C"
   },
   {
-    title: "Locomotive",
-    src: "locomotive.png",
+    title: "Dynamic Pricing Strategy with BI",
+    src: "5.png",
     color: "#EFE8D3"
   },
   {
-    title: "Silencio",
-    src: "silencio.png",
+    title: "Integrated Financial Risk Modeling",
+    src: "6.png",
     color: "#706D63"
+  }
+  ,
+  {
+    title: "Cognitive Tax Insights",
+    src: "7.png",
+    color: "#A7AA9A"
+  },
+  {
+    title: "Actionable Tax Performance",
+    src: "8.png",
+    color: "#7E8A97"
+  },
+  {
+    title: "Data Engineering for Compliance",
+    src: "9.png",
+    color: "#B5A599"
   }
 ]
 
