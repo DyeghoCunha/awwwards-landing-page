@@ -6,38 +6,38 @@ import Image from 'next/image';
 const slider1 = [
     {
         color: "#e3e5e7",
-        src: "c2.jpg"
+        src: "3.png"
     },
     {
         color: "#d6d7dc",
-        src: "decimal.jpg"
+        src: "2.png"
     },
     {
         color: "#e3e3e3",
-        src: "funny.jpg"
+        src: "5.png"
     },
     {
         color: "#21242b",
-        src: "google.jpg"
+        src: "6.png"
     }
 ]
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: "maven.jpg"
+        src: "7.png"
     },
     {
         color: "#e5e0e1",
-        src: "panda.jpg"
+        src: "8.png"
     },
     {
         color: "#d7d4cf",
-        src: "powell.jpg"
+        src: "10.png"
     },
     {
         color: "#e1dad6",
-        src: "wix.jpg"
+        src: "11.png"
     }
 ]
 
@@ -63,7 +63,7 @@ export default function index() {
                                     <Image 
                                     fill={true}
                                     alt={"image"}
-                                    src={`/images/${project.src}`}/>
+                                    src={`/images/dash/${project.src}`}/>
                                 </div>
                             </div>
                         })
@@ -77,7 +77,7 @@ export default function index() {
                                     <Image 
                                     fill={true}
                                     alt={"image"}
-                                    src={`/images/${project.src}`}/>
+                                    src={`/images/dash/${project.src}`}/>
                                 </div>
                             </div>
                         })

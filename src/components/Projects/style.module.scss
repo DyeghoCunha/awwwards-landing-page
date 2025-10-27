@@ -70,6 +70,131 @@
         background-color: transparent;
     }
     
-    
+/* --- Estilos para o Modal de Detalhes --- */
+
+.detailModalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semi-transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Garante que fique na frente */
+  cursor: pointer;
+}
+
+.detailModalContent {
+  width: 90%;
+  max-width: 800px; /* Largura máxima do modal */
+  max-height: 90vh; /* Altura máxima */
+  background-color: #2a2a2a; /* Cor de fundo escura para o modal */
+  color: #EFE8D3; /* Cor do texto (peguei dos seus projetos) */
+  border-radius: 10px;
+  overflow-y: auto; /* Permite scroll se o conteúdo for grande */
+  cursor: default;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.detailModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid #706D63; /* Cor de borda (peguei dos seus projetos) */
+  background-color: #000; /* Cabeçalho preto */
+  border-radius: 10px 10px 0 0;
+}
+
+.detailModalHeader h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff; /* Título em branco */
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.closeButton:hover {
+  transform: scale(1.1) rotate(90deg);
+  color: #B5A599; /* Cor de hover (peguei dos seus projetos) */
+}
+
+.detailModalBody {
+  padding: 25px;
+  flex-grow: 1; /* Faz o corpo ocupar o espaço */
+}
+
+.flowDescription {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  border-left: 3px solid #7E8A97; /* Cor da borda (peguei dos seus projetos) */
+  padding-left: 15px;
+  margin-bottom: 25px;
+  color: #ccc; /* Cor um pouco mais clara para a descrição */
+}
+
+.detailModalBody h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #706D63;
+  padding-bottom: 5px;
+}
+
+.detailModalBody ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detailModalBody li {
+  font-size: 1rem;
+  line-height: 1.7;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  color: #EFE8D3;
+}
+
+/* Adiciona um 'bullet' customizado */
+.detailModalBody li::before {
+  content: '✓'; /* Você pode trocar por '•', '→', etc. */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #A7AA9A; /* Cor do bullet (peguei dos seus projetos) */
+  font-weight: bold;
+}
+
+/* --- Estilo para o item do projeto clicável (exemplo) --- */
+.projectItem {
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+}
+
+.projectItem h2 {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+
 }
 
