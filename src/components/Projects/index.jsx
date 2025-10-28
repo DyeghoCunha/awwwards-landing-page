@@ -6,43 +6,44 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Rounded from '../../common/RoundedButton';
+import NdaModal from '../Modal'
 
 const projects = [
   {
     title: "Predictive Tax Optimization",
     src: "1.png",
-    color: "#000000"
+    color: "rgba(0, 0, 0, 0.5)" // #000000
   },
   {
     title: "Automated Tax Audit",
     src: "4.png",
-    color: "#8C8C8C"
+    color: "rgba(140, 140, 140,0.5 )" // #8C8C8C
   },
   {
     title: "Dynamic Pricing Strategy with BI",
     src: "5.png",
-    color: "#EFE8D3"
+    color: "rgba(239, 232, 211, 0.5)" // #EFE8D3
   },
   {
     title: "Integrated Financial Risk Modeling",
     src: "6.png",
-    color: "#706D63"
+    color: "rgba(112, 109, 99, 0.5)" // #706D63
   }
   ,
   {
     title: "Cognitive Tax Insights",
     src: "7.png",
-    color: "#A7AA9A"
+    color: "rgba(167, 170, 154, 0.5)" // #A7AA9A
   },
   {
     title: "Actionable Tax Performance",
     src: "8.png",
-    color: "#7E8A97"
+    color: "rgba(126, 138, 151, 0.5)" // #7E8A97
   },
   {
     title: "Data Engineering for Compliance",
     src: "9.png",
-    color: "#B5A599"
+    color: "rgba(181, 165, 153, 0.5)" // #B5A599
   }
 ]
 
@@ -78,6 +79,7 @@ export default function Home() {
     xMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "left", {duration: 0.45, ease: "power3"})
     yMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "top", {duration: 0.45, ease: "power3"})
   }, [])
+  const [ndaModalOpen, setNdaModalOpen] = useState(false);
 
   const moveItems = (x, y) => {
     xMoveContainer.current(x)
@@ -91,13 +93,16 @@ export default function Home() {
     moveItems(x, y)
     setModal({active, index})
   }
-
+const handleProjectClick = () => {
+    setNdaModalOpen(true); // Abre o modal de clique
+    setModal({active: false, index: 0}); // Fecha o modal de hover
+  }
   return (
   <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects}>
     <div className={styles.body}>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} manageModal={manageModal} key={index}/>
+          return <Project index={index} title={project.title} manageModal={manageModal} openNdaModal={handleProjectClick} key={index}/>
         })
       }
     </div>
@@ -125,6 +130,10 @@ export default function Home() {
         <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
         <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
     </>
+    <NdaModal
+        active={ndaModalOpen}
+        closeModal={() => setNdaModalOpen(false)}
+      />
   </main>
   )
 }

@@ -30,7 +30,7 @@ export default function index() {
                     </span>
                     <h2>with Data</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>
-                        <Rounded  backgroundColor={"#334BD3"} className={styles.button}>
+                        <Rounded  backgroundColor={"#414c3f"} className={styles.button}>
                             <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>Get in Toutch</p></a> 
                         </Rounded>
                     </motion.div>

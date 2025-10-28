@@ -52,7 +52,9 @@
             .button{
                 width: 180px;
                 height: 180px;
-                background-color: #455CE9;
+                background-color:#141516;
+                backdrop-filter: blur(10px);
+                border: #414c3f 2px solid;
                 color: white;
                 border-radius: 50%;
                 position: absolute;
