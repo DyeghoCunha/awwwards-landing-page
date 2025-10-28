@@ -6,7 +6,7 @@ import Image from 'next/image';
 const slider1 = [
     {
         color: "#e3e5e7",
-        src: "3.png"
+        src: "1.png"
     },
     {
         color: "#d6d7dc",
@@ -14,30 +14,30 @@ const slider1 = [
     },
     {
         color: "#e3e3e3",
-        src: "5.png"
+        src: "3.png"
     },
     {
         color: "#21242b",
-        src: "6.png"
+        src: "4.png"
     }
 ]
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: "7.png"
+        src: "5.png"
     },
     {
         color: "#e5e0e1",
-        src: "8.png"
+        src: "6.png"
     },
     {
         color: "#d7d4cf",
-        src: "10.png"
+        src: "7.png"
     },
     {
         color: "#e1dad6",
-        src: "11.png"
+        src: "8.png"
     }
 ]
 

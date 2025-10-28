@@ -16,33 +16,33 @@ const projects = [
   },
   {
     title: "Automated Tax Audit",
-    src: "4.png",
+    src: "2.png",
     color: "rgba(140, 140, 140,0.5 )" // #8C8C8C
   },
   {
     title: "Dynamic Pricing Strategy with BI",
-    src: "5.png",
+    src: "3.png",
     color: "rgba(239, 232, 211, 0.5)" // #EFE8D3
   },
   {
     title: "Integrated Financial Risk Modeling",
-    src: "6.png",
+    src: "4.png",
     color: "rgba(112, 109, 99, 0.5)" // #706D63
   }
   ,
   {
     title: "Cognitive Tax Insights",
-    src: "7.png",
+    src: "5.png",
     color: "rgba(167, 170, 154, 0.5)" // #A7AA9A
   },
   {
     title: "Actionable Tax Performance",
-    src: "8.png",
+    src: "6.png",
     color: "rgba(126, 138, 151, 0.5)" // #7E8A97
   },
   {
     title: "Data Engineering for Compliance",
-    src: "9.png",
+    src: "7.png",
     color: "rgba(181, 165, 153, 0.5)" // #B5A599
   }
 ]
