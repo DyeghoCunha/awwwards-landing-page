@@ -1,3 +1,4 @@
+"use client"
 import styles from './style.module.scss';
 import Image from 'next/image';
 import Rounded from '../../common/RoundedButton';
@@ -5,7 +6,8 @@ import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '../../common/Magnetic';
 
-export default function index() {
+// ⬇️⬇️ CORREÇÃO AQUI ⬇️⬇️
+export default function Contact() {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -30,7 +32,8 @@ export default function index() {
                     </span>
                     <h2>with Data</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>
-                        <Rounded  backgroundColor={"#414c3f"} className={styles.button}>
+                        <Rounded backgroundColor={"#414c3f"} className={styles.button}>
+                            {/* ... (o resto do seu código permanece igual) ... */}
                             <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>Get in Toutch</p></a> 
                         </Rounded>
                     </motion.div>
@@ -40,10 +43,10 @@ export default function index() {
                 </div>
                 <div className={styles.nav}>
                         <Rounded>
-                           <a href="mailto:contato@dyeghocunha.com?subject=Contact%20from%20Website&body=Hello%2C%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><p>contato@dyeghocunha.com</p></a>
+                            <a href="mailto:contato@dyeghocunha.com?subject=Contact%20from%20Website&body=Hello%2C%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><p>contato@dyeghocunha.com</p></a>
                         </Rounded>
                         <Rounded>
-                           <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>+55 47 9275-6286</p></a> 
+                            <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>+55 47 9275-6286</p></a> 
                         </Rounded>
                 </div>
                 <div className={styles.info}>
@@ -63,17 +66,17 @@ export default function index() {
                             <Magnetic>
                                 <a href="https://www.linkedin.com/in/dyeghocunha" target="_blank"><p>LinkedIn</p></a>
                             </Magnetic>
-                        </span>  
+                        </span> 
                         <Magnetic>
-                          <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>WhatsApp</p></a>
+                            <a href="https://wa.me/554792756286?text=Hello%2C%20I%20came%20from%20your%20website" target="_blank"><p>WhatsApp</p></a>
                         </Magnetic>
-                          <Magnetic>
+                        <Magnetic>
                             <a href="https://github.com/DyeghoCunha" target="_blank"><p>GitHub</p></a>
                         </Magnetic>
                         {/* <Magnetic> */}
-                             {/* <a href="https://www.instagram.com/dyeghocunha/" target="_blank"><p>Instagram</p></a> */}
+                            {/* <a href="https://www.instagram.com/dyeghocunha/" target="_blank"><p>Instagram</p></a> */}
                         {/* </Magnetic> */}
-                      
+                       
                     </div>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import styles from './style.module.scss';
 import { motion } from 'framer-motion';
@@ -26,7 +27,9 @@ const navItems = [
   },
 ]
 
-export default function index() {
+// ⬇️⬇️ CORREÇÃO AQUI ⬇️⬇️
+// Renomeado de "index" para "Menu"
+export default function Menu() {
 
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
@@ -56,8 +59,8 @@ export default function index() {
                     }
             </div>
             <Footer />
-        </div>
-        <Curve />
+       </div>
+       <Curve />
     </motion.div>
   )
 }

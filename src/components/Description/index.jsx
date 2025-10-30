@@ -1,9 +1,13 @@
+"use client"
 import styles from './style.module.scss';
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { slideUp, opacity } from './animation';
 import Rounded from '../../common/RoundedButton';
-export default function index() {
+
+// ⬇️⬇️ CORREÇÃO AQUI ⬇️⬇️
+// Renomeado de "index" para "Description"
+export default function Description() {
 
     const phrase = "Transforming data and tax complexity into clear strategic decisions. Navigating the financial landscape with precise insights for your growth.";
     const description = useRef(null);

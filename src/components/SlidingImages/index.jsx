@@ -41,7 +41,9 @@ const slider2 = [
     }
 ]
 
-export default function index() {
+// ⬇️⬇️ CORREÇÃO AQUI ⬇️⬇️
+// Renomeado de "index" para "SlidingImages"
+export default function SlidingImages() {
 
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
