@@ -25,7 +25,23 @@ const navItems = [
     title: "Contact",
     href: "/contact",
   },
+
+
 ]
+
+const navDownloads = [
+  {
+    title: "Portuguese",
+    href: "/p",
+  },
+  {
+    title: "English",
+    href: "/y",
+  },
+
+]
+
+
 
 // ⬇️⬇️ CORREÇÃO AQUI ⬇️⬇️
 // Renomeado de "index" para "Menu"
@@ -49,6 +65,19 @@ export default function Menu() {
                     </div>
                     {
                       navItems.map( (data, index) => {
+                        return <Link 
+                        key={index} 
+                        data={{...data, index}} 
+                        isActive={selectedIndicator == data.href} 
+                        setSelectedIndicator={setSelectedIndicator}>
+                        </Link>
+                      })
+                    }
+                    <div className={styles.headerdl}>
+                        <p>Curriculum Vitae</p>
+                    </div>
+                     {
+                      navDownloads.map( (data, index) => {
                         return <Link 
                         key={index} 
                         data={{...data, index}} 

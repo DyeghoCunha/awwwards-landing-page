@@ -61,11 +61,11 @@ const iconeAtual = <LiaFileDownloadSolid />;
       <div className={styles.sliderContainer}>
 
 <a
-  href="/DyeghoCunha_SDA.pdf" // 1. O caminho para o arquivo na pasta /public
-  download="DyeghoCunha_SDA.pdf" // 2. O nome que o arquivo terá no computador do usuário
-  target="_blank" // 3. Boa prática (abre em nova aba se o download falhar)
-  rel="noopener noreferrer" // 4. Segurança para target="_blank"
-  className={styles.headerLink} // 5. Classe para corrigir o estilo (IMPORTANTE)
+  href="/DyeghoCunha_SDA.pdf" 
+  download="DyeghoCunha_SDA.pdf" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className={styles.headerLink} 
 >
          <Header ref={stickyElement} icon={iconeAtual} />
 

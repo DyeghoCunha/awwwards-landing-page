@@ -8,9 +8,9 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../../common/RoundedButton';
 import Magnetic from '../../common/Magnetic';
+import { LiaFlagUsaSolid } from "react-icons/lia";
+import { GiBrazilFlag } from "react-icons/gi";
 
-// ⬇️⬇️ CORREÇÃO AQUI ⬇️⬇️
-// Renomeado de "index" para "Header"
 export default function Header() {
     const header = useRef(null);
     const [isActive, setIsActive] = useState(false);
@@ -64,6 +64,17 @@ export default function Header() {
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
+                {/* <Magnetic>
+                    <div className={styles.el}>
+                        <a><LiaFlagUsaSolid /></a>
+                        <div className={styles.indicator}></div>
+                    </div></Magnetic>
+                 <Magnetic>
+                    <div className={styles.el}>
+                        <a><GiBrazilFlag /></a>
+                        <div className={styles.indicator}></div>
+                    </div>
+                </Magnetic>  */}
             </div>
         </div>
         <div ref={button} className={styles.headerButtonContainer}>
