@@ -1,0 +1,69 @@
+.header {
+  position: fixed;
+  display: flex;
+  top: 50vh; 
+  right: 10vw; 
+  width: 100%; 
+  justify-content: flex-end;
+  box-sizing: border-box;
+  cursor: pointer;
+  mix-blend-mode: difference;
+  z-index: 1;
+
+  .burger {
+    position: relative;
+    display: flex;
+
+    // Propriedades adicionadas para centralizar o SVG
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    pointer-events: none; // Mantido do seu código original
+    
+  }
+  .iconWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      
+      // APLICA A ANIMAÇÃO AQUI
+      animation: pulse 1.5s ease-in-out infinite;
+
+      & > svg {
+        width: 100%;
+        height: 100%;
+        fill: white;
+        mix-blend-mode: difference;
+      }
+    }
+  
+
+  .bounds {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+
+    // Efeito de hover mantido do seu código original
+    &:hover {
+      transform: scale(7);
+       fill: rgb(212, 18, 18);color: yellow;
+    }
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+    
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}

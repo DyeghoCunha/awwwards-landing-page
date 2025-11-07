@@ -6,6 +6,11 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
+import Header from '@/common/StickiCursor/header';
+import StickyCursor from '@/common/StickiCursor/stickyCursor';
+import { FiDownload } from "react-icons/fi"
+import { LiaFileDownloadSolid } from "react-icons/lia";
+
 
 export default function Home() {
 
@@ -42,6 +47,9 @@ export default function Home() {
     requestAnimationFrame(animate);
     xPercent += 0.1 * direction;
   }
+const stickyElement = useRef(null);
+const iconeAtual = <LiaFileDownloadSolid />;
+
 
   return (
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
@@ -51,6 +59,19 @@ export default function Home() {
         alt="background"
       />
       <div className={styles.sliderContainer}>
+
+<a
+  href="/DyeghoCunha_SDA.pdf" // 1. O caminho para o arquivo na pasta /public
+  download="DyeghoCunha_SDA.pdf" // 2. O nome que o arquivo terá no computador do usuário
+  target="_blank" // 3. Boa prática (abre em nova aba se o download falhar)
+  rel="noopener noreferrer" // 4. Segurança para target="_blank"
+  className={styles.headerLink} // 5. Classe para corrigir o estilo (IMPORTANTE)
+>
+         <Header ref={stickyElement} icon={iconeAtual} />
+
+</a>
+
+      <StickyCursor stickyElement={stickyElement}/>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Data Insights That Drive Value -</p>
           <p ref={secondText}>Data Insights That Drive Value -</p>
